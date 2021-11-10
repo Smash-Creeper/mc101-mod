@@ -1,0 +1,13 @@
+{
+    "type": "origins:multiple",
+    "void_shader": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/sobel.json",
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "smp:pocket",
+            "inverted": false
+        }
+    },
+    "hidden": true
+}

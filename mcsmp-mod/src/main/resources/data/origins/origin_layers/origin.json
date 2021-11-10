@@ -1,0 +1,23 @@
+{
+  "replace": true,
+  "origins": [
+    "origins:human",
+    "smash:smash_creeper",
+    "boneman:boneman",
+    "sensai:sensai",
+    "funnyboxman:funnyboxman",
+    "quick:quick",
+    "snowy:snowy",
+    "mars:mars",
+    "east:east",
+    "cal:cal",
+    "eternal:eternal",
+    "solunary:solunary",
+    "kasssm:kasssm",
+    "xeron:xeron",
+    "zorro:zorro",
+    "joel:joel",
+    "solar:solar",
+    "rusty:rusty"
+  ]
+}

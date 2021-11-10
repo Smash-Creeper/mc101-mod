@@ -1,0 +1,10 @@
+{
+    "type": "origins:multiple",
+
+    "sinking": {
+        "type": "origins:ignore_water"
+    },
+
+    "name": "Not a swimmer",
+    "description": "Not that you dont know how to swim but you just physicly cant"
+}

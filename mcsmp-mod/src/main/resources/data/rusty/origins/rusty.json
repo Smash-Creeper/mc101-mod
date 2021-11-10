@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"rusty:smolest",
+		"rusty:cantdrown",
+		"rusty:nofalldamage",
+		"rusty:climbing",
+		"everyone:voidproperties"
+	],
+	"icon": "minecraft:dark_oak_trapdoor",
+	"order": 4,
+	"impact": 3,
+	"name": "TheRustySourceFilmMaker",
+	"description": "Holy shit rusty from rusty scene in spongebob underdeltaevent 2021."
+}

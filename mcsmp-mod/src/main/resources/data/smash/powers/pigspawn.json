@@ -1,0 +1,19 @@
+{
+    "type": "origins:active_self",
+    "cooldown": 1200,
+    "entity_action": {
+        "type": "origins:execute_command",
+        "permission_level": 4,
+        "command": "tp @e[type=pig] @s"
+    },
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    },
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/resource_bar.png"
+    },
+    "name": "Brothers",
+    "description": ""
+}

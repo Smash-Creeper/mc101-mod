@@ -1,0 +1,27 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:night_vision",
+      "duration": 2,
+      "amplifier": 10,
+      "is_ambient": false,
+      "show_particles": false,
+      "show_icon": false
+    }
+  }
+,
+  "interval": 1,
+  "condition": {
+    "type": "origins:and",
+    "conditions":[
+      {
+        "type": "origins:exposed_to_sun",
+        "inverted": true
+      }
+    ]
+  },
+  "name": "Cave Sight",
+  "description": "You can see in the dark, Great for mining!"
+}

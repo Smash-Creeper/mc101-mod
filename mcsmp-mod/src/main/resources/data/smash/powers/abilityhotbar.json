@@ -1,0 +1,221 @@
+{
+    "type": "origins:multiple",
+
+    
+    "selected_slot_1": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Vanish / 2. Unvanish\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "selected_slot_2": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability2 / 2.Ability2\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "selected_slot_3": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability3 / 2.Ability3\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 2
+                }
+            ]
+        }
+    },
+    "selected_slot_4": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability4 / 2.Ability4\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 3
+                }
+            ]
+        }
+    },
+    "selected_slot_5": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability5 / 2.Ability5\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 4
+                }
+            ]
+        }
+    },
+    "selected_slot_6": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability6 / 2.Ability6\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 5
+                }
+            ]
+        }
+    },
+    "selected_slot_7": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability7 / 2.Ability7\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 6
+                }
+            ]
+        }
+    },
+    "selected_slot_8": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability8 / 2.Ability8\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 7
+                }
+            ]
+        }
+    },
+    "selected_slot_9": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar {\"text\":\"1. Ability9 / 2.Ability9\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "data get entity @s SelectedItemSlot",
+                    "comparison": "==",
+                    "compare_to": 8
+                }
+            ]
+        }
+    }
+}

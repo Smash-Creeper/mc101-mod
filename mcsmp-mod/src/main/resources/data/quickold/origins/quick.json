@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"quick:boost",
+		"everyone:voidproperties"
+	],
+	"icon": "mcsmp:poptart",
+	"order": 8,
+	"impact": 2,
+	"name": "Quick",
+	"description": "Quick is you."
+}

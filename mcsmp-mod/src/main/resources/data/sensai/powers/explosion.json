@@ -1,0 +1,49 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 1,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": true
+  },
+  "hud_render": {
+    "should_render": false,
+    "sprite_location": "origins:textures/gui/resource_bar.png"
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:resistance",
+          "duration": 5,
+          "amplifier": 5
+        }
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+          "type": "origins:execute_command",
+          "command": "execute positioned as @s run execute positioned ^ ^ ^-1 run summon tnt ~ ~-0.75 ~ {Fuse:1}",
+          "permission_level": 4
+        }
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+          "type": "origins:execute_command",
+          "command": "resource change @s sensai:explosionrecharge_gunpowderbar -7",
+          "permission_level": 4
+        }
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "sensai:explosionrecharge_gunpowderbar",
+    "comparison": ">=",
+    "compare_to": 7
+  }
+}

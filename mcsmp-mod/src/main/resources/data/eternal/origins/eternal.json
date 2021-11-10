@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"everyone:voidproperties"
+	],
+	"icon": "minecraft:end_crystal",
+	"order": 8,
+	"impact": 2,
+	"name": "TheEternalShine",
+	"description": "You Shine for all of eternity."
+}

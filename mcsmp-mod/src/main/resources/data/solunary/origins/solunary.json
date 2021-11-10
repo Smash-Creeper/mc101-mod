@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"solunary:bleeding",
+		"solunary:bloodabilityselection",
+		"solunary:bloodcleanse",
+		"everyone:voidproperties"
+	],
+	"icon": "minecraft:potion",
+	
+	"order": 8,
+	"impact": 3,
+	"name": "Solunary",
+	"description": "The Strength of something shines within."
+}

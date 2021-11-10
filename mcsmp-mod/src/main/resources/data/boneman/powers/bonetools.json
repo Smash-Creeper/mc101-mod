@@ -1,0 +1,119 @@
+{
+    "type": "origins:multiple",
+    "break_stone": {
+        "type": "origins:modify_harvest",
+        "allow": true,
+        "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "boneman:stone"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            }
+        }
+    },
+    "break_stone_fast": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "boneman:stone"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 2.0
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            }
+        }
+    },
+    "break_dirt": {
+        "type": "origins:modify_harvest",
+        "allow": true,
+        "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "boneman:dirt"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            }
+        }
+    },
+    "break_dirt_fast": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "boneman:dirt"
+        },
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 2.0
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            }
+        }
+    },
+    "sword": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "value": 2,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:bone"
+                }
+            }
+        }
+    },
+    "unsword": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "value": 2,
+            "operation": "subtraction"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        }
+    },
+    "name": "Bone Efficancy",
+    "description": "As a boneman you know how to use bones in the most Efficant way possible(if you know what i mean)"
+}

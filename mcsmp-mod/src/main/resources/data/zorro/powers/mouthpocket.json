@@ -1,0 +1,13 @@
+{
+  "type": "origins:inventory",
+  "drop_on_death": false,
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "drop_on_death_filter": {
+    "type": "origins:food"
+  },
+  "name": "M o u t h",
+  "description": "M o u t h"
+}

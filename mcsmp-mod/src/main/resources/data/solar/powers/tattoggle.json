@@ -1,0 +1,111 @@
+{
+    "type": "origins:multiple",
+    "togbar":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "start_value": 0,
+        "hud_render": {
+          "should_render": true,
+          "bar_index": 3,
+          "sprite_location": "origins:textures/gui/resource_bar.png",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "sensai:explosionrecharge_gunpowderbar",
+            "comparison": ">",
+            "compare_to": 10
+          }
+        },
+        "hidden": true
+    },
+    "togtank":
+    {
+        "type": "origins:active_self",
+        "cooldown": 1,
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "solar:tattoggle_togbar",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "resource set @s solar:tattoggle_togbar 1"
+              }
+            ]
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/resource_bar.png"
+        }
+    },
+    "togterror":
+    {
+      "type": "origins:active_self",
+      "cooldown": 1,
+      "condition":{
+          "type": "origins:and",
+          "conditions": [
+              {
+                  "type": "origins:resource",
+                  "resource": "solar:tattoggle_togbar",
+                  "comparison": "==",
+                  "compare_to": 1
+              }
+          ]
+      },
+      "entity_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:execute_command",
+              "command": "resource set @s solar:tattoggle_togbar 0"
+            }
+          ]
+      },
+      "key": {
+          "key": "key.origins.secondary_active",
+          "continuous": false
+      },
+      "hud_render": {
+          "should_render": false,
+          "sprite_location": "origins:textures/gui/resource_bar.png"
+      }
+  },
+  "shieldcenter":{
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+        "type": "origins:and",
+        "actions": [
+            {
+            "type": "origins:execute_command",
+            "command": "function others:solartankinit",
+            "permission_level": 4
+            }
+        ]
+    },
+    "entity_action_respawned":{
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "function others:solartankuninit",
+                "permission_level": 4
+            }
+        ]
+    }
+  },
+    "hidden":true
+}
