@@ -24,6 +24,8 @@ public class ModBlocks {
     public static final Block EMPTYNESS_BLOCK = new Block(FabricBlockSettings.of(Material.LEAVES,MapColor.PINK).breakByHand(true).breakByTool(FabricToolTags.SWORDS,5).strength(300.0f,0.0f));
     public static final Block LIGHTNESS_BLOCK = new Block(FabricBlockSettings.of(Material.LEAVES,MapColor.PINK).breakByHand(true).breakByTool(FabricToolTags.SWORDS,5).strength(300.0f,0.0f).lightLevel(15));
     public static final Block DIMENSIONAL_HARNESS = new Block(FabricBlockSettings.of(Material.METAL,MapColor.LIGHT_BLUE_GRAY).breakByTool(FabricToolTags.PICKAXES,2).strength(10.0f,0.0f));
+    public static final Block VERISIMILITUDE_SENTINEL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL,MapColor.IRON_GRAY).breakByTool(FabricToolTags.PICKAXES,4).strength(40.0f,21.0f));
+    public static final Block VERISIMILITUDE_SENTINEL_GLASS = new Block(FabricBlockSettings.of(Material.METAL,MapColor.IRON_GRAY).breakByTool(FabricToolTags.PICKAXES,4).strength(15.0f,10.0f));
 
 
     public static void registerBlocks()
