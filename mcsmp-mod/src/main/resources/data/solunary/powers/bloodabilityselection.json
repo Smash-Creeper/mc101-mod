@@ -60,7 +60,7 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "title @s actionbar {\"text\":\"1. Ability2 / 2.Ability2\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                    "command": "title @s actionbar {\"text\":\"Blood Spikes\",\"color\":\"dark_red\"}"
                 },
                 {
                     "type": "origins:execute_command",
@@ -93,7 +93,7 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "title @s actionbar {\"text\":\"1. Ability3 / 2.Ability3\",\"color\":\"#D6D6D6\",\"italic\":false}"
+                    "command": "title @s actionbar {\"text\":\"Blood Block\",\"color\":\"dark_red\"}"
                 },
                 {
                     "type": "origins:execute_command",

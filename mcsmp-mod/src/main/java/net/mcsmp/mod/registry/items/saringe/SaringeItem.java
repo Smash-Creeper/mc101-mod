@@ -106,7 +106,7 @@ public class SaringeItem extends Item {
     public boolean hasGlint(ItemStack stack) {
         return super.hasGlint(stack) || !PotionUtil.getPotionEffects(stack).isEmpty();
     }
-/*
+
     public void appendStacks(ItemGroup group, DefaultedList<ItemStack> stacks) {
         if (this.isIn(group)) {
             Iterator var3 = Registry.POTION.iterator();
@@ -119,5 +119,5 @@ public class SaringeItem extends Item {
             }
         }
 
-    }*/
+    }
 }

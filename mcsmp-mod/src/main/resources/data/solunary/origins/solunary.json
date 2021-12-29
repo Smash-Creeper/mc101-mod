@@ -1,8 +1,9 @@
 {
 	"powers": [
 		"solunary:bleeding",
-		"solunary:bloodabilityselection",
 		"solunary:bloodcleanse",
+		"solunary:bloodspikes",
+		"solunary:bloodblock",
 		"everyone:voidproperties"
 	],
 	"icon": "minecraft:potion",

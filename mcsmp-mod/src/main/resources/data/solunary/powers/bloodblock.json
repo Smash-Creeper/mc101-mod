@@ -1,0 +1,78 @@
+{
+    "type":"origins:multiple",
+    "block":{
+        "type": "origins:active_self",
+        "cooldown": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                "type": "origins:execute_command",
+                "command": "execute as @s positioned as @s at @s run function others:solunarybloodblock"
+                },
+                {
+                    "type": "origins:damage",
+                    "amount": 2,
+                    "source": {
+                    "name": "magic",
+                    "bypasses_armor": true,
+                    "unblockable": true
+                }
+                }
+            ]
+        },
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:health",
+                    "comparison": "<",
+                    "compare_to": 14
+                }
+            ]
+        },
+        "key": {
+            "key": "key.origins.tertiary_active",
+            "continuous": false
+        },
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/resource_bar.png"
+        }
+    },
+    "blockremove":{
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                "type": "origins:execute_command",
+                "command": "function others:solunaryremovebb"
+                }
+            ]
+        },
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "solunary:bloodabilityselection_invisdetectorbar",
+                    "comparison": "==",
+                    "compare_to": 2
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": "<",
+                    "compare_to": 14
+                }
+            ]
+        },
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "origins:textures/gui/resource_bar.png"
+        }
+    },
+    "name": "Blood Block",
+    "description": "Consentrate your blood to form a solid block in the direction you look. You can only focus that block for so long(aka 5 seconds)."
+}

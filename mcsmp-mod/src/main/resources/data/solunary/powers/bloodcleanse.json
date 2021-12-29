@@ -1,15 +1,27 @@
 {
     "type": "origins:active_self",
     "cooldown": 1,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:execute_command",
+            "command": "execute as @s positioned as @s at @s run summon area_effect_cloud ~ ~ ~ {Particle:\"dripping_dripstone_water\",Radius:3f,Duration:200,Color:6881280,Effects:[{Id:38b,Amplifier:1b,Duration:20}]}"
+          },
+          {
+            "type": "origins:damage",
+            "amount": 6,
+            "source": {
+            "name": "magic",
+            "bypasses_armor": true,
+            "unblockable": true
+          }
+        }
+        ]
+    },
     "condition":{
         "type": "origins:and",
         "conditions": [
-            {
-                "type": "origins:resource",
-                "resource": "solunary:bloodabilityselection_invisdetectorbar",
-                "comparison": "==",
-                "compare_to": 0
-            },
             {
                 "type": "origins:health",
                 "comparison": "<",
@@ -17,21 +29,8 @@
             }
         ]
     },
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-          {
-            "type": "origins:execute_command",
-            "command": "execute as @s positioned as @s at @s run summon area_effect_cloud ~ ~ ~ {Particle:\"mcsmp:blood\",Radius:3f,Duration:200,Color:6881280,Effects:[{Id:38b,Amplifier:1b,Duration:20}]}"
-          },
-          {
-            "type": "origins:execute_command",
-            "command": "effect give @s minecraft:instant_damage"
-          }
-        ]
-    },
     "key": {
-        "key": "key.origins.primary_active",
+        "key": "key.origins.secondary_active",
         "continuous": false
     },
     "hud_render": {
@@ -39,5 +38,5 @@
         "sprite_location": "origins:textures/gui/resource_bar.png"
     },
     "name": "Blood Cleanse",
-    "description": "Cleanse the blood."
+    "description": "Cleanse the blood of yourself and others who step into your blood pool."
 }
