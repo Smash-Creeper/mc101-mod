@@ -1,13 +1,11 @@
 {
 	"powers": [
-		"smash:abilityhotbar",
-		"smash:vanishing",
-		"smash:reappearing",
+		"smash:lvl_up",
 		"everyone:voidproperties"
 	],
 	"icon": "minecraft:porkchop",
 	"order": 10,
 	"impact": 3,
 	"name": "Smash Creeper",
-	"description": "The begining and end of everything(in the server)"
+	"description": "A Learner, not a fast one."
 }

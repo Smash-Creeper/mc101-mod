@@ -1,6 +1,6 @@
 {
   "type": {
-    "name": "smp:pocket",
+    "name": "mcsmp:pocket",
     "ultrawarm": false,
     "natural": false,
     "piglin_safe": true,

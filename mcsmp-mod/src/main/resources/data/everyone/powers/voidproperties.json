@@ -5,7 +5,7 @@
         "shader": "minecraft:shaders/post/sobel.json",
         "condition": {
             "type": "origins:dimension",
-            "dimension": "smp:pocket",
+            "dimension": "mcsmp:pocket",
             "inverted": false
         }
     },

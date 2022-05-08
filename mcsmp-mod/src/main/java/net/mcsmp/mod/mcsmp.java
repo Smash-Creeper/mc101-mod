@@ -2,6 +2,7 @@ package net.mcsmp.mod;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.mcsmp.mod.registry.ModBlockEntities;
 //import net.mcsmp.mod.registry.ClientModParticles;
 import net.mcsmp.mod.registry.ModBlocks;
 import net.mcsmp.mod.registry.ModItems;
@@ -21,6 +22,7 @@ public class mcsmp implements ModInitializer{
         ModItems.registerItems();
         ModSounds.registerSounds();
         ModBlocks.registerBlocks();
+//        ModBlockEntities.registerBlockEntities();
      //   ModParticles.registerParticles();
      //   ClientModParticles.ClientregisterParticles();
     }

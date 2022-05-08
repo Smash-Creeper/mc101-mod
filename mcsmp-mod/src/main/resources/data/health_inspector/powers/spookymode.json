@@ -1,0 +1,131 @@
+{
+    "type": "origins:multiple",
+    "active_phasing":{
+        "type": "origins:toggle",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "retain_state": true
+    },
+    "phasing": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 10,
+        "block_condition": {
+          "type": "origins:in_tag",
+          "tag": "origins:unphasable"
+        },
+        "phase_down_condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:sneaking"
+            },
+            {
+              "type": "origins:on_block"
+            },
+            {
+                "type": "origins:power_active",
+                "power": "health_inspector:spookymode_active_phasing"
+              },
+              {
+                  "type": "origins:resource",
+                  "resource": "health_inspector:spookymode_phasebar",
+                  "comparison": ">",
+                  "compare_to": 0
+              }
+          ]
+        },
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+            {
+              "type": "origins:power_active",
+              "power": "health_inspector:spookymode_active_phasing"
+            },
+            {
+                "type": "origins:resource",
+                "resource": "health_inspector:spookymode_phasebar",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+      }
+    },
+    "phasebar": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 360,
+      "start_value": 21,
+      "hud_render": {
+        "should_render": true,
+        "bar_index": 15,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "condition": {
+          "type": "origins:resource",
+          "resource": "health_inspector:spookymode_phasebar",
+          "comparison": "<=",
+          "compare_to": 360
+        }
+      },
+      "hidden": true
+    },
+    "givefuel": {
+      "type": "origins:action_over_time",
+      "interval": 5,
+      "hud_render": {
+        "should_render": false,
+        "sprite_location": "origins:textures/gui/resource_bar.png"
+      },
+      "entity_action": {
+        "type": "origins:execute_command",
+        "command": "resource change @s health_inspector:spookymode_phasebar 1",
+        "permission_level": 4
+      },
+      "condition":{
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "health_inspector:spookymode_phasebar",
+            "comparison": "<=",
+            "compare_to": 360
+          }
+        ]
+      }
+    },
+    "removefuel": {
+      "type": "origins:action_over_time",
+      "interval": 1,
+      "hud_render": {
+        "should_render": false,
+        "sprite_location": "origins:textures/gui/resource_bar.png"
+      },
+      "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+      },
+      "entity_action": {
+        "type": "origins:execute_command",
+        "command": "resource change @s health_inspector:spookymode_phasebar -1",
+        "permission_level": 4
+      },
+      "condition":{
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "health_inspector:spookymode_phasebar",
+            "comparison": "<=",
+            "compare_to": 360
+          },
+          {
+            "type": "origins:power_active",
+            "power": "health_inspector:spookymode_phasing"
+          }
+        ]
+      }
+    }
+  }

@@ -41,6 +41,7 @@ public class ModItems {
     public static final Item SEASON5_PLAYER_ESSANCE = new Item(new Item.Settings().maxCount(69).rarity(Rarity.RARE));
     public static final Item SEASON4_PLAYER_ESSANCE = new Item(new Item.Settings().maxCount(69).rarity(Rarity.EPIC));
     public static final Item MANIFESTED_VERISIMILITUDE_SHARD = new Item(new Item.Settings().group(mcsmp.SMP_GROUP).maxCount(69).rarity(Rarity.EPIC));
+//    public static final Item MANIFESTED_VERISIMILITUDE_RENFORCED_NETHERITE_INGOT = new Item(new Item.Settings().group(mcsmp.SMP_GROUP).maxCount(69).rarity(Rarity.EPIC));
     
 
     ///Special Items///
@@ -67,6 +68,7 @@ public class ModItems {
     public static final BlockItem VERISIMILITUDE_SENTINEL_GLASS = new BlockItem(ModBlocks.VERISIMILITUDE_SENTINEL_GLASS, new Item.Settings().group(SMP_GROUP));
     public static final BlockItem MANIFESTED_VERISIMILITUDE = new BlockItem(ModBlocks.MANIFESTED_VERISIMILITUDE, new Item.Settings().group(SMP_GROUP));
     public static final BlockItem NETHERITE_RENFORCED_GLASS = new BlockItem(ModBlocks.NETHERITE_RENFORCED_GLASS, new Item.Settings().group(SMP_GROUP));
+    public static final BlockItem DIMENSIONAL_PROPERTY_FUSER = new BlockItem(ModBlocks.DIMENSIONAL_PROPERTY_FUSER, new Item.Settings().group(SMP_GROUP));
 
     //    public static final Item TEST_DISC = new MusicDiscItem()
     public static void registerItems() {
@@ -107,5 +109,6 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(mcsmp.MOD_ID,"netherite_verisimilitude_chestplate"), NETHERITE_VERISIMILITUDE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(mcsmp.MOD_ID,"netherite_verisimilitude_leggings"), NETHERITE_VERISIMILITUDE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(mcsmp.MOD_ID,"netherite_verisimilitude_boots"), NETHERITE_VERISIMILITUDE_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(mcsmp.MOD_ID,"dimensional_property_fuser"), DIMENSIONAL_PROPERTY_FUSER);
     }
 }

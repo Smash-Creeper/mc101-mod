@@ -17,7 +17,7 @@ public class verisimilitude_reader_Item extends Item{
 
     public verisimilitude_reader_Item(Settings settings) {
         super(settings);
-        //TODO Auto-generated constructor stub
+        
     }
     
     @Override
@@ -92,6 +92,8 @@ public class verisimilitude_reader_Item extends Item{
                 energy = 22;
             }else if(block == ModBlocks.NETHERITE_RENFORCED_GLASS){
                 energy = 3;
+            }else if(block == ModBlocks.DIMENSIONAL_PROPERTY_FUSER){
+                energy = 201;//block.blockEntity.VEnergy;
             }else{
                 energy = 1;
             }
