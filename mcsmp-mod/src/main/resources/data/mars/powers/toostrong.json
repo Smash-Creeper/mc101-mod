@@ -1,9 +1,0 @@
-{
-  "type": "origins:effect_immunity",
-  "effects": [
-    "minecraft:strength",
-    "minecraft:regeneration"
-  ],
-  "name": "Too Strong",
-  "description": "Your blood is really strong so buff potions wont have any effect on you."
-}

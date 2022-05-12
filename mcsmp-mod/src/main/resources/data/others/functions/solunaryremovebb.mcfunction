@@ -1,1 +1,0 @@
-execute as @e[tag=BLOOD] positioned as @s at @s if entity @s[nbt={Age:99}] run fill ~ ~1 ~ ~ ~-1 ~ air replace barrier

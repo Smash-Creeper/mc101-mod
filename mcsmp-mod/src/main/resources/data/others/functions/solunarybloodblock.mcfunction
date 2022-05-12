@@ -1,2 +1,0 @@
-execute as @s positioned as @s at @s if block ^ ^ ^2 air run execute as @s positioned ^ ^ ^2 positioned ~ ~1 ~ align y run summon area_effect_cloud ~ ~ ~ {Particle:"mcsmp:blood",Radius:1f,Duration:100,Color:16711680,Tags:["BLOOD"]}
-execute as @s positioned as @s at @s if block ^ ^ ^2 air run execute as @s positioned ~ ~1 ~ run setblock ^ ^ ^2 barrier replace
