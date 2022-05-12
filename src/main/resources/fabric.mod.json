@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "mcsmp",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "MC102 Mod",
+  "description": "Poggers!",
   "authors": [
-    "Me!"
+    "Smash Creeper"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.smashcreeper.mcsmp.MC102Mod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "mcsmp.mixins.json"
   ],
 
   "depends": {
