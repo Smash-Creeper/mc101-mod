@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"everyone:voidproperties"
+	],
+	"icon": "magick:fire_pearl",
+	"order": 8,
+	"impact": 2,
+	"name": "Cal",
+	"description": "Cal."
+}

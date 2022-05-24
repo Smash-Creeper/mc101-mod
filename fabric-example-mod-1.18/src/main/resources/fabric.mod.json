@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "mcsmp",
+  "version": "${version}",
+
+  "name": "Minecraft102 SMP",
+  "description": "MC102 Mod lol funni!",
+  "authors": [
+    "Smash Creeper"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mcsmp/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.smashcreeper.mcsmp.ModInit"
+    ],
+    "client": [
+      "net.smashcreeper.mcsmp.ClientModInit"
+    ]
+  },
+  "mixins": [
+    "mcsmp.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,6 @@
+summon area_effect_cloud ~ 1000 ~ {Duration:10000000,Tags:["CENTER","SOLAR"]}
+
+execute as @s positioned as @s at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:0b,Marker:1b,Invisible:1b,Tags:["EDGE1"],Pose:{RightArm:[270f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+execute as @s positioned as @s at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:0b,Marker:1b,Invisible:1b,Tags:["EDGE2"],Pose:{RightArm:[270f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+execute as @s positioned as @s at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:0b,Marker:1b,Invisible:1b,Tags:["EDGE3"],Pose:{RightArm:[270f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+execute as @s positioned as @s at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:0b,Marker:1b,Invisible:1b,Tags:["EDGE4"],Pose:{RightArm:[270f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}

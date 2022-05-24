@@ -1,0 +1,10 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:gain_air",
+        "value": 20
+    },
+    "interval": 1,
+    "name": "From the Show",
+    "description": "Due to you being from the kids cartoon know as spongebob squarepants you and no longer required to breathe air therefore you cannot drown."
+}

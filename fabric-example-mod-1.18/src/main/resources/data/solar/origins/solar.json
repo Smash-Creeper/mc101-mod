@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"solar:tattoggle",
+		"solar:tank",
+		"solar:terrorist",
+		"everyone:voidproperties"
+	],
+	"icon": "minecraft:fire_charge",
+	"order": 9,
+	"impact": 2,
+	"name": "Solar",
+	"description": "Solar man. A change of heart."
+}

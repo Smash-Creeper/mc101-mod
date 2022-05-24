@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"mars:toostrong",
+		"mars:flight",
+		"everyone:voidproperties"
+	],
+	"icon": "magick:fire_pearl",
+	"order": 8,
+	"impact": 2,
+	"name": "Mars",
+	"description": "Just a regular ol person whos good at alot of things."
+}

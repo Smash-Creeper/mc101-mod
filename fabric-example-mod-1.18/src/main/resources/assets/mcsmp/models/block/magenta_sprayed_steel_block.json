@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mcsmp:blocks/magenta_sprayed_steel_block"
+  }
+}

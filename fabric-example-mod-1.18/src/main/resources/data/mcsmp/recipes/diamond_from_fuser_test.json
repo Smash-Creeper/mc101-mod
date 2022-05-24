@@ -1,0 +1,12 @@
+{
+    "type": "mcsmp:dimensional_property_fuser",
+    "cost": 10,
+    "ingredients": [
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    "output": {
+      "item": "minecraft:diamond"
+    }
+  }

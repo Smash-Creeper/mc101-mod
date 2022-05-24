@@ -1,0 +1,26 @@
+{
+    "replace": false,
+    "values": [
+      "mcsmp:manifested_verisimilitude",
+      "mcsmp:verisimilitude_sentinel_block",
+      "mcsmp:verisimilitude_sentinel_glass",
+      "mcsmp:netherite_renforced_glass",
+      "mcsmp:dimensional_property_fuser",
+      "mcsmp:steel_block",
+      "mcsmp:black_sprayed_steel_block",
+      "mcsmp:blue_sprayed_steel_block",
+      "mcsmp:brown_sprayed_steel_block",
+      "mcsmp:cyan_sprayed_steel_block",
+      "mcsmp:gray_sprayed_steel_block",
+      "mcsmp:green_sprayed_steel_block",
+      "mcsmp:light_blue_sprayed_steel_block",
+      "mcsmp:light_gray_sprayed_steel_block",
+      "mcsmp:lime_sprayed_steel_block",
+      "mcsmp:magenta_sprayed_steel_block",
+      "mcsmp:orange_sprayed_steel_block",
+      "mcsmp:pink_sprayed_steel_block",
+      "mcsmp:red_sprayed_steel_block",
+      "mcsmp:white_sprayed_steel_block",
+      "mcsmp:yellow_sprayed_steel_block"
+    ]
+  }

@@ -1,0 +1,28 @@
+{
+  "type": "origins:active_self",
+  "cooldown": 0,
+  "key": {
+    "key": "key.sneak",
+    "continuous": true
+  },
+  "hud_render": {
+    "should_render": false,
+    "sprite_location": "origins:textures/gui/resource_bar.png"
+  },
+  "entity_action": {
+    "type": "origins:delay",
+    "ticks": 1,
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:slow_falling 1 1 true",
+          "permission_level": 4
+        }
+      ]
+    }
+  },
+  "name": "Snowflake",
+  "description": "You can gently fall like a little snowflake by pressing the sneak key in mid-air."
+}

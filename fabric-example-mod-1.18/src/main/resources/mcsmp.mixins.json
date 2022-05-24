@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.smashcreeper.mcsmp.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "ExampleMixin",
+    "MixinEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

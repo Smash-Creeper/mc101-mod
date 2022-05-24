@@ -1,0 +1,114 @@
+{
+    "type": "origins:multiple",
+    "to_box": {
+        "type": "origins:active_self",
+        "cooldown": 60,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "mcsmp:textures/gui/origins/baricons/enter_pocket.png",
+            "bar_index": 4
+        },
+        "entity_action":{
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:and",
+                "actions":[
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s positioned as @s run effect give @e[distance=..2] minecraft:resistance 10 10 true",
+                        "permission_level": 4
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s positioned as @s run execute as @e[distance=..2] in mcsmp:pocket run tp @s ~ 64 ~",
+                        "permission_level": 4
+                    }
+                ]
+                
+            }
+        },
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[predicate=funnyboxman:overworld]",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[predicate=funnyboxman:pocket]",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "funnyboxman:from_box",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "from_box": {
+        "type": "origins:active_self",
+        "cooldown": 60,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "hud_render": {
+            "should_render": false,
+            "sprite_location": "mcsmp:textures/gui/origins/baricons/exit_pocket.png",
+            "bar_index": 4
+        },
+        "entity_action":{
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:and",
+                "actions":[
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s positioned as @s run effect give @e[distance=..2] minecraft:resistance 10 10 true",
+                        "permission_level": 4
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @s positioned as @s run execute as @e[distance=..2] in minecraft:overworld run tp @s ~ 100 ~",
+                        "permission_level": 4
+                    }
+                ]
+            }
+        },
+        "condition":{
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[predicate=funnyboxman:overworld]",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[predicate=funnyboxman:pocket]",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "funnyboxman:to_box",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "name": "Funny Box",
+    "description": "You travel through dimensions"
+}

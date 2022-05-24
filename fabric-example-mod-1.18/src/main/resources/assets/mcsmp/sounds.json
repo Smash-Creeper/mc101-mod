@@ -1,0 +1,68 @@
+{
+  "sentry_standoff": {
+    "subtitle": "subtitles.mcsmp.sentry_standoff",
+    "sounds": [
+      {
+        "name":"mcsmp:sentry_standoff",
+        "stream":true
+      }
+    ]
+  },
+  "health_inspector": {
+    "subtitle": "subtitles.mcsmp.health_inspector",
+    "sounds": [
+      {
+        "name":"mcsmp:health_inspector",
+        "stream":true
+      }
+    ]
+  },
+  "maniacs_revenge": {
+    "subtitle": "subtitles.mcsmp.maniacs_revenge",
+    "sounds": [
+      "mcsmp:maniacs_revenge"
+    ]
+  },
+  "forsaken": {
+    "subtitle": "subtitles.mcsmp.forsaken",
+    "sounds": [
+      "mcsmp:forsaken"
+    ]
+  },
+  "smart_race": {
+    "subtitle": "subtitles.mcsmp.smart_race",
+    "sounds": [
+      "mcsmp:smart_race"
+    ]
+  },
+  "the_shack": {
+    "subtitle": "subtitles.mcsmp.the_shack",
+    "sounds": [
+      "mcsmp:the_shack"
+    ]
+  },
+  "bobby_dorito": {
+    "subtitle": "subtitles.mcsmp.bobby_dorito",
+    "sounds": [
+      "mcsmp:bobby_dorito"
+    ]
+  },
+  "beethoven_virus": {
+    "subtitle": "subtitles.mcsmp.beethoven_virus",
+    "sounds": [
+      "mcsmp:beethoven_virus"
+    ]
+  },
+  "crab_rave": {
+    "subtitle": "subtitles.mcsmp.crab_rave",
+    "sounds": [
+      "mcsmp:crab_rave"
+    ]
+  },
+  "zavodila": {
+    "subtitle": "subtitles.mcsmp.zavodila",
+    "sounds": [
+      "mcsmp:zavodila"
+    ]
+  }
+}

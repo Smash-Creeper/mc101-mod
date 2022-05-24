@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"snowy:snowflake",
+		"snowy:death",
+		"everyone:voidproperties"
+	],
+	"icon": "minecraft:snowball",
+	"order": 7,
+	"impact": 2,
+	"name": "Snowy",
+	"description": "Become the synth king."
+}
