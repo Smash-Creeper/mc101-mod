@@ -1,6 +1,7 @@
 package net.smashcreeper.mcsmp.blocks.entities;
 
 import java.util.Optional;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -18,11 +19,13 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.server.integrated.IntegratedPlayerManager;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.smashcreeper.mcsmp.ModInit;
 import net.smashcreeper.mcsmp.blocks.ModBlocks;
 import net.smashcreeper.mcsmp.items.ModItems;
 import net.smashcreeper.mcsmp.recipe.DimensionalPropertyFuserRecipe;
@@ -166,15 +169,118 @@ public class DimensionalPropertyFuserEntity extends BlockEntity implements Named
 
         if(match.isPresent()) {
             entity.removeStack(1,1);
-        //    entity.removeStack(2,1);
+            entity.removeStack(2,1);
 
-            entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(2).getCount() + 1));
+            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
+                    entity.getStack(3).getCount() + 1));
             
             int curcost = 0;
             ///Im trying to figure out how to impliment this into the json but cant figure it out RN ToT
-            if(entity.getStack(2).isOf(Items.DIAMOND)) {
+            if(entity.getStack(3).isOf(Items.DIAMOND)) {
                 curcost = 10;
+            }else
+            if(entity.getStack(3).isOf(Items.PLAYER_HEAD)) {
+                curcost = 5;
+                Integer headnum = Math.round(ThreadLocalRandom.current().nextFloat(0,29));
+                String headname = "";
+                switch(headnum){
+                    case 0:
+                    headname = "Angus_Remington";
+                    break;
+                    case 1:
+                    headname = "Jschlatt";
+                    break;
+                    case 2:
+                    headname = "Connoreatspants";
+                    break;
+                    case 3:
+                    headname = "Fundy";
+                    break;
+                    case 4:
+                    headname = "Dream";
+                    break;
+                    case 5:
+                    headname = "GeorgeNotFound";
+                    break;
+                    case 6:
+                    headname = "Sapnap";
+                    break;
+                    case 7:
+                    headname = "CaptainSparklez";
+                    break;
+                    case 8:
+                    headname = "JeromeASF";
+                    break;
+                    case 9:
+                    headname = "BajanCanadian";
+                    break;
+                    case 10:
+                    headname = "Technoblade";
+                    break;
+                    case 11:
+                    headname = "Igna24";
+                    break;
+                    case 12:
+                    headname = "Saster";
+                    break;
+                    case 13:
+                    headname = "ElRichMC";
+                    break;
+                    case 14:
+                    headname = "FuriousDestroyer";
+                    break;
+                    case 15:
+                    headname = "Notch";
+                    break;
+                    case 16:
+                    headname = "jeb_";
+                    break;
+                    case 17:
+                    headname = "TommyInnit";
+                    break;
+                    case 18:
+                    headname = "Tubbo_";
+                    break;
+                    case 19:
+                    headname = "Wilbursoot";
+                    break;
+                    case 20:
+                    headname = "Ph1LzA";
+                    break;
+                    case 21:
+                    headname = "a6d";
+                    break;
+                    case 22:
+                    headname = "BadBoyHalo";
+                    break;
+                    case 23:
+                    headname = "Skeppy";
+                    break;
+                    case 24:
+                    headname = "DanTDM";
+                    break;
+                    case 25:
+                    headname = "Sneegsnag";
+                    break;
+                    case 26:
+                    headname = "Yoitsgold";
+                    break;
+                    case 27:
+                    headname = "Michaelmcchill";
+                    break;
+                    case 28:
+                    headname = "SwaggerSouls";
+                    break;
+                    case 29:
+                    headname = "MrCreeper0615";
+                    break;
+                    default:
+                    headname = "Steve";
+                    break;
+                }
+                ModInit.LOGGER.info(Float.toString(headnum));
+
+                entity.getStack(3).getOrCreateNbt().putString("SkullOwner", headname);
             }
 
             entity.charge-=curcost;
@@ -188,10 +294,10 @@ public class DimensionalPropertyFuserEntity extends BlockEntity implements Named
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleInventory inventory, ItemStack output) {
-        return inventory.getStack(2).getItem() == output.getItem() || inventory.getStack(2).isEmpty();
+        return inventory.getStack(3).getItem() == output.getItem() || inventory.getStack(3).isEmpty();
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount();
+        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
     }
 }

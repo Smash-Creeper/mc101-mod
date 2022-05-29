@@ -23,6 +23,7 @@ public class ModItems {
     public static final Item MANIFESTED_VERISIMILITUDE_SHARD = registerItem("manifested_verisimilitude_shard", new Item(new FabricItemSettings().group(ModInit.SMP).maxCount(64)));
     public static final Item steel_ingot = registerItem("steel_ingot", new Item(new FabricItemSettings().group(ModInit.SMP).maxCount(64)));
     public static final Item raw_steel = registerItem("raw_steel", new Item(new FabricItemSettings().group(ModInit.SMP).maxCount(64)));
+    public static final Item bazil = registerItem("bazil", new Item(new FabricItemSettings().group(ModInit.SMP).maxCount(64).food(ModFoodComponents.BAZIL)));
     //public static final Item VERISIMILITUDE_READER = registerItem("verisimilitude_reader", new Item(new FabricItemSettings().group(ModInit.SMP).maxCount(1)));
 
     private static Item registerItem(String name, Item item){

@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"bazil:relatively_short",
+		"bazil:theraputic",
+		"bazil:photosynthisis",
+		"bazil:too_cold",
+		"everyone:voidproperties"
+	],
+	"icon": "mcsmp:bazil",
+	"order": 4,
+	"impact": 2,
+	"name": "Bazil Plant",
+	"description": "The manifestation if a bazil, not much to say"
+}

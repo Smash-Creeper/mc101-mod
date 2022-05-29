@@ -34,5 +34,8 @@ public abstract class MixinEntity extends Entity {
         if (source.getAttacker() instanceof PlayerEntity && getUuidAsString().equals("1146920f-7280-4728-94d8-024a37829eea")) {
             dropStack(new ItemStack(ModItems.HEALTH_INSPECTOR_DISC));
         }
+        if (source.getAttacker() instanceof PlayerEntity && getUuidAsString().equals("077e9fcc-0aa1-4bf4-904d-b22629d5734c")) {
+            dropStack(new ItemStack(ModItems.bazil));
+        }
     }
 }

@@ -41,6 +41,11 @@ public class DimensionalPropertyFuserScreen extends HandledScreen<DimensionalPro
         if(handler.hasFuel()) {
             drawTexture(matrices, x + 19, y + 24 + 14 - handler.getScaledFuelProgress(), 184, 63 - handler.getScaledFuelProgress(), 7, handler.getScaledFuelProgress());
         }
+
+        drawTexture(matrices, x + 102, y + 21, 102, 197, 55, 53);
+
+        this.textRenderer.draw(matrices,"V.Energy: " + Integer.toString(handler.getCharge()), x + 8, y + 28, 0x404040);
+        this.textRenderer.draw(matrices,"Charge: " + Integer.toString(handler.getScaledPercentProgress())+"%", x + 8, y + 45, 0x404040);
     }
     
     @Override

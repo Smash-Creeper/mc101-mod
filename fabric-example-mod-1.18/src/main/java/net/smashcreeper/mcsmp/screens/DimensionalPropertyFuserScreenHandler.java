@@ -20,7 +20,7 @@ public class DimensionalPropertyFuserScreenHandler extends ScreenHandler{
     private final PropertyDelegate propertyDelegate;
 
     public DimensionalPropertyFuserScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(3), new ArrayPropertyDelegate(4));
+        this(syncId, playerInventory, new SimpleInventory(4), new ArrayPropertyDelegate(4));
         //TODO Auto-generated constructor stub
     }
 
@@ -31,10 +31,10 @@ public class DimensionalPropertyFuserScreenHandler extends ScreenHandler{
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new ModVerisimilitudeSlot(inventory,0,44,35));
-        this.addSlot(new Slot(inventory,1,116,35));
-    //    this.addSlot(new Slot(inventory,2,116,15));
-        this.addSlot(new ModResultSlot(inventory,2,79,35));
+        this.addSlot(new ModVerisimilitudeSlot(inventory,0,8,54));
+        this.addSlot(new Slot(inventory,2,45,54));
+        this.addSlot(new Slot(inventory,1,66,54));
+        this.addSlot(new ModResultSlot(inventory,3,121,54));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
@@ -51,10 +51,32 @@ public class DimensionalPropertyFuserScreenHandler extends ScreenHandler{
         return propertyDelegate.get(2) > 0;
     }
 
+    public int getScaledCharge() {
+        int progress = this.propertyDelegate.get(2);
+        int maxProgress = this.propertyDelegate.get(3);  // Max Progress
+        int progressArrowSize = 26; // This is the width in pixels of your arrow
+
+        return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+
+    public int getCharge() {
+        int charge = this.propertyDelegate.get(2);
+
+        return charge;//maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+    
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
         int progressArrowSize = 26; // This is the width in pixels of your arrow
+
+        return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+    
+    public int getScaledPercentProgress() {
+        int progress = this.propertyDelegate.get(0);
+        int maxProgress = this.propertyDelegate.get(1);  // Max Progress
+        int progressArrowSize = 100; // This is the width in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

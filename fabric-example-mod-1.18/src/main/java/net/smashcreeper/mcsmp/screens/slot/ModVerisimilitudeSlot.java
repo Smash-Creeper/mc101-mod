@@ -5,6 +5,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.screen.slot.Slot;
+import net.smashcreeper.mcsmp.blocks.ModBlocks;
 import net.smashcreeper.mcsmp.items.ModItems;
 
 public class ModVerisimilitudeSlot extends Slot {

@@ -19,6 +19,32 @@ repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 
 	maven { url = "https://maven.kyrptonaught.dev" }
+
+	maven {
+        name = "Ladysnake Libs"
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
+    }
+    maven {
+        url = 'https://maven.cafeteria.dev'
+        content {
+            includeGroup 'net.adriantodt.fabricmc'
+        }
+    }
+    maven {
+        url "https://maven.jamieswhiteshirt.com/libs-release"
+        content {
+            includeGroup "com.jamieswhiteshirt"
+        }
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url "https://maven.shedaniel.me/"
+    }
+    maven {
+        url "https://maven.terraformersmc.com/"
+    }
 }
 
 dependencies {
@@ -34,6 +60,8 @@ dependencies {
 
 	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
 	include 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
+
+	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
 
 	//modImplementation 'com.ptsmods:devlogin:2.1'
 }
