@@ -11,6 +11,7 @@ import net.smashcreeper.mcsmp.blocks.entities.ModBlockEntities;
 import net.smashcreeper.mcsmp.items.ModItems;
 import net.smashcreeper.mcsmp.recipe.ModRecipes;
 import net.smashcreeper.mcsmp.screens.ModScreenHandlers;
+import net.smashcreeper.mcsmp.world.dimension.ModDimensions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,5 +33,6 @@ public class ModInit implements ModInitializer {
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerAllScreenHandlers();
+		ModDimensions.register();
 	}
 }

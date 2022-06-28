@@ -181,7 +181,7 @@ public class DimensionalPropertyFuserEntity extends BlockEntity implements Named
             }else
             if(entity.getStack(3).isOf(Items.PLAYER_HEAD)) {
                 curcost = 5;
-                Integer headnum = Math.round(ThreadLocalRandom.current().nextFloat(0,29));
+                Integer headnum = Math.round(ThreadLocalRandom.current().nextFloat(0,32));
                 String headname = "";
                 switch(headnum){
                     case 0:
@@ -272,6 +272,9 @@ public class DimensionalPropertyFuserEntity extends BlockEntity implements Named
                     headname = "SwaggerSouls";
                     break;
                     case 29:
+                    headname = "Luigi";
+                    break;
+                    case 30:
                     headname = "MrCreeper0615";
                     break;
                     default:

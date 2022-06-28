@@ -18,9 +18,10 @@
                     "ingredient": {
                     "item": "minecraft:leather_helmet"
                     
-                    },
-                    "inverted":true
+                    }
+                    
                 },
+                "inverted":true
             }
         ]
     },

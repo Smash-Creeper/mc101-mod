@@ -1,0 +1,11 @@
+{
+    "type": "mcsmp:the_between",
+    "generator": {
+      "type": "minecraft:noise",
+      "settings": "minecraft:overworld",
+      "biome_source": {
+        "type": "minecraft:the_end"
+      }
+    }
+  }
+  
