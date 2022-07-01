@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-      "mcsmp:manifested_verisimilitude",
-      "mcsmp:verisimilitude_sentinel_block",
-      "mcsmp:verisimilitude_sentinel_glass",
-      "mcsmp:netherite_renforced_glass"
-    ]
-  }

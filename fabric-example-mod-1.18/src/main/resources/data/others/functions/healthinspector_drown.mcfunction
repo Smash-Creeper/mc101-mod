@@ -1,1 +1,0 @@
-kill @e[distance=..4]

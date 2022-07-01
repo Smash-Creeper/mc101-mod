@@ -1,5 +1,0 @@
-{
-  "type": "origins:shader",
-  "shader": "minecraft:shaders/post/color_convolve.json",
-  "hidden": true
-}

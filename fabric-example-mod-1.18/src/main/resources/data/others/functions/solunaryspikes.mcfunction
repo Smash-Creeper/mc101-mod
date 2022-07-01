@@ -1,3 +1,0 @@
-execute as @s positioned as @s at @s run summon arrow ^ ^2 ^3 {Color:12058624,SoundEvent:"entity.player.splash",CustomPotionEffects:[{Id:9b,Amplifier:2b,Duration:200,ShowParticles:0b},{Id:19b,Amplifier:2b,Duration:200,ShowParticles:0b}]}
-execute as @s positioned as @s at @s run summon arrow ^ ^4 ^5 {Color:12058624,SoundEvent:"entity.player.splash",CustomPotionEffects:[{Id:9b,Amplifier:2b,Duration:200,ShowParticles:0b},{Id:19b,Amplifier:2b,Duration:200,ShowParticles:0b}]}
-execute as @s positioned as @s at @s run summon arrow ^ ^6 ^7 {Color:12058624,SoundEvent:"entity.player.splash",CustomPotionEffects:[{Id:9b,Amplifier:2b,Duration:200,ShowParticles:0b},{Id:19b,Amplifier:2b,Duration:200,ShowParticles:0b}]}

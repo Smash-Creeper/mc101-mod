@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "mcsmp:blocks/white_sprayed_steel_block"
-  }
-}
